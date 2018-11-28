@@ -1,0 +1,65 @@
+/*弹出框样式*/
+.alertBox{
+    width: 906px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.alertContent{
+    width:340px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+}
+.alertContent h3{
+     font-size: 20px;
+     color: #535589;
+     padding: 42px  0 30px 44px;
+ }
+.closeAlert{
+    cursor: pointer;
+    color: #b0b3ca;
+    float: right;
+}
+.closeAlert:hover{
+    color: #9698af;
+}
+.form-body{
+    overflow: hidden;
+}
+.alertContent form{
+    padding:0 28px 20px 0;
+}
+.form-group label{
+    width: 74px;
+    text-align: right;
+    margin-right: 12px;
+    color: #21212b;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+}
+.form-group>div{
+    float: left;
+}
+.verificationCode{
+    width:226px;
+}
+.verificationCode input{
+    width: 112px;
+    float: left;
+    margin-right: 6px;
+}
+.verificationCode img{
+    width: 108px;
+    height: 40px;
+    border-radius: 4px;
+}
+.loginBanner{
+    float: left;
+}

@@ -1,0 +1,357 @@
+.contentMain{
+    overflow: hidden;
+}
+.contentMain h2{
+    color: #21212b;
+    font-size: 24px;
+    text-align: center;
+    margin: 76px 0 42px 0;
+}
+.checkMenu{
+    width: 920px;
+    /*height: 44px;*/
+    margin: 0 auto 20px auto;
+}
+.checkMenu>div{
+    height: 42px;
+    margin-bottom: 24px;
+    display: inline-block;
+    position: relative;
+}
+.checkMenu>div label{
+    margin:0 5px 0 26px;
+    text-align: right;
+    width: 70px;
+}
+.checkMenu input{
+    width: 188px;
+    height: 42px;
+    border-radius:1px;
+    border: 1px solid #d8d8e6;
+    padding: 0 12px;
+}
+.simulation{
+    background: url("../images/select_bottom.png") no-repeat 162px 16px;
+    cursor: pointer;
+    background-color: #fff;
+}
+/*模拟下拉列表*/
+.check{
+    width: 188px;
+    position: absolute;
+    right: 0;
+    top: 43px;
+    border: 1px solid #d8d8e6;
+    background: #fff;
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+}
+.check li{
+    line-height: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+    text-align: left;
+    color: #21212b;
+    transition: .2s all ease;
+}
+.check li:hover{
+    background: #edeefa;
+    transition: .2s all ease;
+}
+.Remarks{
+    width: 840px;
+    margin:0 auto 30px auto;
+    height: 100px;
+    overflow: hidden;
+}
+.Remarks label{
+    margin:12px 8px 0 0;
+    float: left;
+}
+.contract input{
+    width: 336px;
+}
+.Remarks textarea{
+    resize: none;
+    width: 776px;
+    height: 100px;
+    border-radius:1px;
+    border: 1px solid #d8d8e6;
+    padding:8px 10px;
+}
+.goodsList{
+    width:1150px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+}
+.goodsList tr{
+    height: 48px;
+    border-bottom: 6px solid #f3f7fb;
+}
+.goodsList tr:first-child{
+    height: 40px;
+}
+.goodsList tr input{
+    height: 30px;
+    border-radius: 1px;
+    border: 1px solid #d8d8e6;
+    padding: 8px 10px;
+}
+.deal_number_hidden {
+    width: 150px;
+}
+.batch_no_hidden {
+    width: 100px;
+}
+.valid_at_hidden {
+    width: 100px;
+}
+.goodsList tr  input[type=checkbox]{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    right: 10px;
+}
+.goodsList tr th,.goodsList tr td{
+    text-align: center;
+}
+.goodsList tr:first-child{
+    background-color: #eaebf9;
+    color: #7c7eb1;
+    line-height: 40px;
+}
+.goodsList tr td{
+    line-height: 48px;
+}
+td a{
+    cursor: pointer;
+    color: #6565ef;
+}
+td a:hover{
+    color: #3737a2;
+    text-decoration:underline !important;
+}
+td .active{
+    color: #ababbf;
+}
+
+.submitBox{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #eaebf9;
+    height: 120px;
+    overflow: hidden;
+}
+.submitBox p{
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    color: #21212b;
+    font-size: 18px;
+}
+.DetermineInWarehousing{
+    display: block;
+    width: 220px;
+    margin: 38px auto 0 auto;
+    height: 46px;
+    color: #fff;
+    background-color: #f88648;
+}
+.DetermineInWarehousing:hover{
+    color: #fff;
+    background-color: #fb7b35;
+}
+.section{
+    margin-bottom: 160px;
+}
+
+/*弹出框样式*/
+.alertBox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0,0.5) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.alertContent{
+    width:372px;
+    height: 228px;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.alertContent h3{
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    color: #65667f;
+    background-color: #edeefa;
+    padding: 0 20px;
+}
+.alertContent>div{
+    padding: 40px 29px 0 36px;
+}
+.alertContent p{
+    line-height: 16px;
+    text-align: justify;
+    margin-bottom: 48px;
+}
+.closeAlert{
+    cursor: pointer;
+    color: #b0b3ca;
+    float: right;
+}
+.closeAlert:hover{
+    color: #9698af;
+}
+.form-body{
+    overflow: hidden;
+}
+.alertContent form{
+    padding:17px 50px 20px 42px;
+}
+.form-control{
+    padding: 0 12px;
+    height: 40px;
+    width: 190px;
+}
+.form-group label{
+    width: 70px;
+    text-align: right;
+    margin-right: 12px;
+    color: #21212b;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+}
+.form-group>div{
+    float: left;
+}
+.errorMessage{
+    color: red;
+}
+.btn_box{
+    width: 150px;
+    height: 34px;
+    float: right;
+}
+.Determine{
+    padding:0;
+    color: #fff;
+    width:100px;
+    height: 34px;
+    float: left;
+    margin: 0;
+    background-color: #7b80f8;
+}
+.Determine:hover{
+    background-color:#5f64e0;
+    color: #fff;
+}
+.return{
+    background-color: #fff;
+    border: 0;
+    float: right;
+    height: 34px;
+    color: #6b6b78;
+    font-size: 14px;
+}
+.local button{
+    float: right;
+}
+.Customer p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.companyAddress .Determine{
+    float: none;
+    display: block;
+    margin: 38px auto 0 auto;
+}
+.customerAddress{
+    height: 224px;
+    width: 426px;
+}
+.customerAddress>form{
+    padding: 40px 18px 0 30px;
+}
+.checkRegion{
+    height: auto;
+}
+.checkRegion button{
+    float: right;
+    /*margin-top: 42px;*/
+}
+
+
+
+/*地区插件*/
+.item {
+    float: left;
+    width: 118px;
+    position: relative;
+}
+#City{
+    margin: 0 11px;
+}
+.termSub form{
+    float: left;
+}
+.item i {
+    display: block;
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #d8d8e6;
+    padding-left: 10px;
+    border-radius: 1px;
+    transition: .2s all ease;
+    color: #21212b;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/select_bottom.png) no-repeat scroll center #fff;
+    background-position: 98px;
+    cursor: pointer;
+    float: left;
+}
+.item i:hover{
+    background: url(../images/select_bottom_hover.png) no-repeat scroll center #fff;
+    background-position: 98px;
+    /*border: 1px solid #7b80f8 !important;*/
+}
+.item ul {
+    display: none;
+    width: 118px;
+    height: 200px;
+    border: 1px solid #d8d8e6;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.customerAddress ul li{
+    line-height: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+    text-align: left;
+    color: #21212b;
+    transition: .2s all ease;
+}
+.customerAddress ul li:hover{
+    background: #edeefa;
+    transition: .2s all ease;
+}

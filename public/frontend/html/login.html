@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+
+<div class="alertBox">
+    <div class="alertContent">
+        <h3>登录</h3>
+        <form>
+            <div class="form-body">
+                <div class="form-group">
+                    <label >账号</label>
+                    <div>
+                        <input class="form-control" type="text"  placeholder="请输入账号">
+                        <div class="errorMessage">error</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <div>
+                        <input class="form-control" type="text"  placeholder="请输入密码">
+                        <div class="errorMessage">error</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>验证码</label>
+                    <div class="verificationCode">
+                        <input class="form-control" type="text"   placeholder="请输入验证码">
+                        <img src="../images/brand.gif" alt="">
+                        <div class="errorMessage">error</div>
+                    </div>
+
+                </div>
+                <div class="btn_box">
+                    <button class="btn Determine" type="submit"><i class="fa fa-check"></i>登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="loginBanner">
+        <img src="../images/banner.png" alt="">
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

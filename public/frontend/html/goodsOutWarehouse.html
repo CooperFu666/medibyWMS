@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品出库</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/goodsOutWarehouse.css">
+</head>
+<body>
+<div class="content">
+    <!--头部strat-->
+	<div id="header"></div>
+	<!--头部end-->
+    <!--内容-->
+    <div class="contentMain">
+        <div class="section">
+            <h2>出库列表</h2>
+            <div class="checkMenu">
+                <div class="contract">
+                    <label>销售合同号</label>
+                    <input type="text" placeholder="请输入">
+                </div>
+                <div class="contract">
+                    <label>物流单号</label>
+                    <input type="text" placeholder="请输入">
+                </div>
+                <br>
+                <div class="base">
+                    <label>客户</label>
+                    <input type="text"  class="simulation selected Monitor" placeholder="请选择">
+                    <ul class="check checkList">
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li> <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li> <li>亚瑟</li>
+                        <li>拉莫斯</li>
+                        <li>亚瑟</li>
+                        <li>拉莫斯</li>
+
+
+                    </ul>
+                </div>
+                <div class="category">
+                    <label>销售公司</label>
+                    <input type="text" placeholder="请选择" readonly="readonly" class="simulation selected" placeholder="请选择">
+                    <ul class="check checkList">
+                        <li>艾希</li>
+                        <li>拉克丝</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <label>销售代表</label>
+                    <input type="text" placeholder="请选择" readonly="readonly" class="simulation selected" placeholder="请选择">
+                    <ul class="check checkList">
+                        <li>艾希</li>
+                        <li>拉克丝</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Remarks">
+                <label>出库备注</label>
+                <textarea rows="7" placeholder="请输入备注"></textarea>
+            </div>
+            <table class="goodsList">
+                <tr>
+                    <th>货号</th>
+                    <th>品牌</th>
+                    <th>批号</th>
+                    <th>产品有效期</th>
+                    <th>注册证号</th>
+                    <th>采购合同号</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        强生
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>271937129831</td>
+                    <td>7128309180912093102931</td>
+                    <td>
+                        <a class="delete">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        强生
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>271937129831</td>
+                    <td>7128309180912093102931</td>
+                    <td>
+                        <a class="delete">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        强生
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>271937129831</td>
+                    <td>7128309180912093102931</td>
+                    <td>
+                        <a class="delete">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        强生
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>271937129831</td>
+                    <td>7128309180912093102931</td>
+                    <td>
+                        <a class="delete">删除</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="submitBox">
+            <button class="btn DetermineInWarehousing" type="submit">确定出库</button>
+            <p>统计：ABC-001 X10</p>
+        </div>
+    </div>
+</div>
+
+<!--弹出框-->
+<div class="alertBox" style="display: block">
+    <div class="alertContent">
+        <h3>提示 <span class="closeAlert">X</span></h3>
+        <div>
+            <p>数据库里没有上海嘉定医疗科技有限公司，是否添加为客户？</p>
+            <div class="btn_box">
+                <button class="btn Determine determineAdd"><i class="fa fa-check"></i> 确定</button>
+                <button class="return"><i class="fa fa-reply"></i> 取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alertBox successAdd">
+    <div class="alertContent">
+        <h3>添加客户 <span class="closeAlert">X</span></h3>
+        <div>
+            <p>已成功添加上海嘉定医疗科技有限公司，四川省-成都市-成华区</p>
+            <div class="btn_box local">
+                <button class="btn Determine successBtn"><i class="fa fa-check"></i> 确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alertBox customerAddressBox">
+    <div class="alertContent customerAddress">
+        <h3>添加客户 <span class="closeAlert">X</span></h3>
+        <form action="" name="form1">
+            <div class="item" id="Province">
+                <i>请选择省份</i>
+                <ul>
+                    <li>请选择省份</li>
+                </ul>
+                <input type="hidden" name="cho_Province" value="省" />
+            </div>
+            <div class="item" id="City">
+                <i>请选择城市</i>
+                <ul>
+                    <li>请选择城市</li>
+                </ul>
+                <input type="hidden" name="cho_City" value="市" />
+            </div>
+            <div class="item" id="Area">
+                <i>请选择地区</i>
+                <ul>
+                    <li>请选择地区</li>
+                </ul>
+                <input type="hidden" name="cho_Area" value="区" />
+            </div>
+            <div class="btn_box checkRegion">
+                <button class="btn Determine determineAddress" type="button"><i class="fa fa-check"></i> 确定</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/city.min.js"></script>
+<script src="../js/jquery.cityselect.js"></script>
+<script src="../js/goodsOutWarehouse.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

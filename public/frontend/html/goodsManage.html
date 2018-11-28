@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品管理</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/goodsManage.css" />
+	</head>
+	<body>
+		<!--头部strat-->
+		<div id="header"></div>
+		<!--头部end-->
+		
+		<!--主体strat-->
+		<div class="main">
+			<h2>出库商品列表</h2>
+			<div class="term">
+				<div class="termSub">
+					<span>品牌</span>
+					<input type="text" class="seled" value="全部" readonly="readonly">
+					<ul>
+						<li>全部</li>
+						<li>强生</li>
+						<li>奥林巴斯</li>
+					</ul>
+				</div>
+				<div class="termSub">
+					<span>状态</span>
+					<input type="text" class="seled" value="全部" readonly="readonly">
+					<ul>
+						<li>全部</li>
+						<li>已出库</li>
+						<li>库存</li>
+					</ul>
+				</div>
+				<div class="termSub">
+					<span>公司</span>
+					<input type="text" class="seled" value="全部" readonly="readonly">
+					<ul>
+						<li>全部</li>
+						<li>XXX公司</li>
+						<li>OOO公司</li>
+					</ul>
+				</div>
+				<div class="termSub">
+					<span>销售代表</span>
+					<input type="text" class="seled" value="全部" readonly="readonly">
+					<ul>
+						<li>全部</li>
+						<li>小七</li>
+						<li>小八</li>
+					</ul>
+				</div>
+				<div class="termSub fl_r">
+					<input type="text" class="seled " value="按入库时间" readonly="readonly">
+					<ul>
+						<li>按入库时间</li>
+						<li>按出库时间</li>
+					</ul>
+					<input type="text" class="timer" />
+					<b>至</b>
+					<input type="text" class="timer" />
+					<button>查询</button>
+				</div>
+			</div>
+			<div class="term">
+				<div class="termSub">
+					<span>客户所在地</span>
+					<form action="" name="form1">
+						<div class="item" id="Province">
+							<i>请选择省份</i>
+							<ul>
+								<li>请选择省份</li>
+							</ul>
+							<input type="hidden" name="cho_Province" value="省" />
+						</div>
+						<div class="item" id="City">
+							<i>请选择城市</i>
+							<ul>
+								<li>请选择城市</li>
+							</ul>
+							<input type="hidden" name="cho_City" value="市" />
+						</div>
+						<div class="item" id="Area">
+							<i>请选择地区</i>
+							<ul>
+								<li>请选择地区</li>
+							</ul>
+							<input type="hidden" name="cho_Area" value="区" />
+						</div>
+					</form>
+				</div>
+				<div class="termSub customer">
+					<span>客户</span>
+					<input type="text" class="seled" value="" readonly="readonly">
+					<ul>
+						<li>XXX公司&nbsp;<p>古巨基</p></li>
+						<li>OOO公司&nbsp;<br/>张根硕</li>
+						<li>CCC公司&nbsp;<br/>梁静茹</li>
+					</ul>
+				</div>
+				<div class="termSub">
+					<input type="text" placeholder="请输入型号/批号/合同号/注册证号" class="timer" style="width: 280px;" />
+					<button>搜索</button>
+				</div>
+				<button class="export">导出</button>
+			</div>
+			<div style="overflow: auto; width: 100%;">
+				<table class="gridtable" id="alternatecolor">
+					<tr>
+						<th>货号</th>
+						<th>库房</th>
+						<th>型号</th>
+						<th>品牌</th>
+						<th>批号</th>
+						<th>生产日期/有效期</th>
+						<th>注册证号</th>
+						<th>采购合同号</th>
+						<th>入库时间</th>
+						<th>操作者</th>
+						<th>销售合同号</th>
+						<th>客户</th>
+						<th>出库时间</th>
+						<th>操作者</th>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+					<tr>
+						<td>71289371238911</td><td>北京库房</td><td>CRK-212</td><td>强生</td><td>PSA112</td><td>2018-12-12</td><td>12312312312312</td><td>HI1278901380931</td><td>2018-12-12 21:21:21</td><td>张全蛋</td><td>712893719238912</td><td>上海嘉定医疗有限公司<i>?</i></td><td>2018-12-12 21:21:21</td><td>张全蛋</td>
+					</tr>
+				</table>
+			</div>
+			<!--分页-->
+			<div class="paging">
+				<div class="pagingInfo">
+					<span>总计 142 个记录</span>
+					<span>分为 10 页</span>
+					<span>当前第 1 页，每页15 个记录</span>
+				</div>
+				<div class="pagingOperate">
+					<button class="prev">上一页</button>
+					<button class="next">下一页</button>
+					<p>跳转到<input type="text" />页</p>
+				</div>
+			</div>
+			
+		</div>
+		<!--主体end-->
+		<!--弹出框start-->
+			<div class="popUp client">
+				<div class="popUpBox">
+					<h2>
+						<span>客户</span>
+						<i class="PopUpClose">×</i>
+					</h2>
+					<div class="popUpBoxTest">
+						<p>上海嘉定医疗科技有限公司</p>
+						<p>四川省-成都市-青羊区</p>
+						<button class="PopUpClose">确定</button>
+					</div>
+				</div>
+			</div>
+		<!--弹出框end-->
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/city.min.js"></script>
+    	<script src="../js/jquery.cityselect.js"></script>
+    	<script src="../js/goodsManage.js"></script>
+    	<script src="../js/common.js"></script>
+	</body>
+</html>
